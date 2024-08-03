@@ -3,7 +3,7 @@
         'name' => 'tatobuilder/formbuilder',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6ddcc79e06d9ef7b265545c130aab8a2afdcfb81',
+        'reference' => 'abd60df9f65fae37f5687b112c652840a1722841',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'tatobuilder/formbuilder' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6ddcc79e06d9ef7b265545c130aab8a2afdcfb81',
+            'reference' => 'abd60df9f65fae37f5687b112c652840a1722841',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
