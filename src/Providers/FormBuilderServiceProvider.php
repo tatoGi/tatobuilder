@@ -14,19 +14,22 @@ class FormBuilderServiceProvider extends ServiceProvider
     public function boot()
     {
         // Publish views
-        $this->loadViewsFrom(__DIR__.'/Resources/views', 'forms');
+        $this->publishes([
+            __DIR__.'/../Resources/views' => resource_path('views/vendor/formbuilder'),
+        ], 'views');
 
-        // Publish routes
+        // Load routes
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
-        // Publish migrations if necessary
+        // Publish migrations
         $this->publishes([
-            __DIR__.'/../database/migrations' => database_path('migrations')
+            __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'migrations');
+
+        // Publish assets
         $this->publishes([
-            __DIR__ . '/../src/assets' => public_path('vendor/formbuilder'),
+            __DIR__.'/../assets' => public_path('vendor/formbuilder'),
         ], 'public');
-       
     }
 
     /**
