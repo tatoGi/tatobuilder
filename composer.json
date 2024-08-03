@@ -2,6 +2,8 @@
     "name": "tatobuilder/formbuilder",
     "description": "Form builder for Laravel",
     "type": "library",
+    "keywords": ["form", "build", "builder", "laravel"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Tatobuilder\\Formbuilder\\": "src/"
