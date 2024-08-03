@@ -1,26 +1,25 @@
 {
     "name": "tatobuilder/formbuilder",
-    "description": "form builder for laravel",
-    "type": "project",
+    "description": "Form builder for Laravel",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Tatobuilder\\Formbuilder\\": "src/"
         }
     },
     "repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/tatoGi/tatobuilder"
-    }
-],
-
+        {
+            "type": "vcs",
+            "url": "https://github.com/tatoGi/tatobuilder"
+        }
+    ],
     "authors": [
         {
             "name": "Tato Laperashvili",
             "email": "tato.laperashvili95@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {}
 }
