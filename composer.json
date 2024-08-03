@@ -20,7 +20,7 @@
             "email": "tato.laperashvili95@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {}
 }
