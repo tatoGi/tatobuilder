@@ -43,7 +43,7 @@ class FormBuilderController extends Controller
             'title' => $data['title'],
             'email' => $data['email'],
         ];
-
+        
         $form = Form::create($formData);
 
         if (isset($request['n_fields'])) {
