@@ -6,20 +6,13 @@ use Illuminate\Support\ServiceProvider;
 
 class FormBuilderServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
     public function boot()
     {
         // Publish views
-        $this->publishes([
-            __DIR__.'/../Resources/views' => resource_path('views/vendor/formbuilder'),
-        ], 'views');
-
-        // Load routes
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadViewsFrom(__DIR__.'/../Resources/views', 'forms');
+        
+        // Publish routes
+        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
 
         // Publish migrations
         $this->publishes([
@@ -32,13 +25,9 @@ class FormBuilderServiceProvider extends ServiceProvider
         ], 'public');
     }
 
-    /**
-     * Register the application services.
-     *
-     * @return void
-     */
     public function register()
     {
-        // Register any package services
+        // Register any bindings or services
     }
 }
+
