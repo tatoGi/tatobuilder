@@ -3,7 +3,7 @@
         'name' => 'tatobuilder/formbuilder',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '333b41c8fbe5ae0c2ff95d91e854d793a1f41b96',
+        'reference' => '5b4ebfe8ac3093b26cd94287cf03aa204b2be002',
         'type' => 'laravel-package',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -169,7 +169,7 @@
         'tatobuilder/formbuilder' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '333b41c8fbe5ae0c2ff95d91e854d793a1f41b96',
+            'reference' => '5b4ebfe8ac3093b26cd94287cf03aa204b2be002',
             'type' => 'laravel-package',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
