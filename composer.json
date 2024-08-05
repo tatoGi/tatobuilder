@@ -11,9 +11,9 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Tatobuilder\\FormBuilder\\FormBuilderServiceProvider"
-            ]
+           "providers": [
+            "Tatobuilder\\FormBuilder\\Providers\\FormBuilderServiceProvider"
+        ]
         }
     },
     "repositories": [
