@@ -31,7 +31,7 @@ class FormBuilderServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->register(\Tatobuilder\FormBuilder\FormBuilderServiceProvider::class);
+      
     }
 }
 
