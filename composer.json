@@ -16,12 +16,6 @@
             ]
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/tatoGi/tatobuilder"
-        }
-    ],
     "authors": [
         {
             "name": "Tato Laperashvili",
@@ -29,6 +23,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {}
+    "prefer-stable": true
 }

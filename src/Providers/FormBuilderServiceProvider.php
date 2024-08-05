@@ -9,10 +9,14 @@ class FormBuilderServiceProvider extends ServiceProvider
     public function boot()
     {
         // Publish views
-        $this->loadViewsFrom(__DIR__.'/../Resources/views', 'forms');
-        
+        $this->publishes([
+            __DIR__.'/../Views' => resource_path('views/vendor/forms'),
+        ], 'views');
+
         // Publish routes
-        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
+        $this->publishes([
+            __DIR__.'/../../routes' => base_path('routes'),
+        ], 'routes');
 
         // Publish migrations
         $this->publishes([
@@ -27,7 +31,7 @@ class FormBuilderServiceProvider extends ServiceProvider
 
     public function register()
     {
-        // Register any bindings or services
+        $this->app->register(\Tatobuilder\FormBuilder\FormBuilderServiceProvider::class);
     }
 }
 
