@@ -1,6 +1,6 @@
 <?php
 
-namespace Tatobuilder\FormBuilder;
+namespace Tatobuilder\FormBuilder\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
