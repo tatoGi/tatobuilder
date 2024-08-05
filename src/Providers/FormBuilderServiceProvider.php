@@ -10,7 +10,7 @@ class FormBuilderServiceProvider extends ServiceProvider
     {
         // Publish views
         $this->publishes([
-            __DIR__.'/../Views' => resource_path('views/vendor/forms'),
+            __DIR__.'/../../resources/views' => resource_path('views/vendor/forms'),
         ], 'views');
 
         // Publish routes
@@ -20,18 +20,27 @@ class FormBuilderServiceProvider extends ServiceProvider
 
         // Publish migrations
         $this->publishes([
-            __DIR__.'/../database/migrations' => database_path('migrations'),
+            __DIR__.'/../../database/migrations' => database_path('migrations'),
         ], 'migrations');
 
         // Publish assets
         $this->publishes([
-            __DIR__.'/../assets' => public_path('vendor/formbuilder'),
+            __DIR__.'/../../public' => public_path('vendor/formbuilder'),
         ], 'public');
+        
+        // Publish controllers
+        $this->publishes([
+            __DIR__.'/../../src/Http/Controllers' => app_path('Http/Controllers/Forms'),
+        ], 'controllers');
+
+        // Publish models
+        $this->publishes([
+            __DIR__.'/../../src/Models' => app_path('Models/Forms'),
+        ], 'models');
     }
 
     public function register()
     {
-      
+        // Register any package services here
     }
 }
-
